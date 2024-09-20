@@ -360,6 +360,7 @@
 "Assets/Scripts/Input Manager.cs"
 "Assets/Scripts/InteractZone.cs"
 "Assets/Scripts/InterfaceManager.cs"
+"Assets/Scripts/Road.cs"
 "Assets/Scripts/RoadManager.cs"
 "Assets/Scripts/Runner.cs"
 "Assets/Scripts/Scenery Manager.cs"
