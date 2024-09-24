@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1904
     height: 921
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 741
     height: 589
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 50
+  controlID: 126
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -242,8 +242,8 @@ MonoBehaviour:
     y: 0
     width: 584
     height: 589
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -297,8 +297,8 @@ MonoBehaviour:
     y: 0
     width: 330
     height: 871
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -453,7 +453,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Particles/Magic effects pack/Prefabs/Hits and explosions
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -461,27 +461,27 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Particles/Magic effects pack/Prefabs/Hits and explosions
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\i\Desktop\CppGame\Game\Endless Runner
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: c4fd0000
-    m_LastClickedID: 64964
-    m_ExpandedIDs: 000000002264000070640000aec9000090fd000098fd00009cfd000000ca9a3b
+    scrollPos: {x: 0, y: 67}
+    m_SelectedIDs: e8640000
+    m_LastClickedID: 25832
+    m_ExpandedIDs: 0000000096640000986400009a640000f2640000f464000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Particles
-      m_OriginalName: Particles
+      m_Name: Managers
+      m_OriginalName: Managers
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 64912
+      m_UserData: 25834
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000022640000
+    m_ExpandedIDs: 0000000096640000986400009a640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -591,9 +591,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 14a10000
       m_LastClickedID: 0
-      m_ExpandedIDs: 56b5f9ff60bef9ff0adaf9ff86daf9ffe4e0f9ff4003faffc60dfaffde17faff3cdeffffe8e5ffff10fbffffcacb000086e50000
+      m_ExpandedIDs: 4615ffff5a18ffff5c19ffffa61affff9221ffff5429ffff5e2bffffce37ffffa43effffec49ffff7c53ffff345dfffff87bfffffe7bffffae86ffffda87ffff04fbffff12ba000064ba000006bb00006ccd0000becd00002ccf000030cf00003ccf000068cf00007ecf0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -947,9 +947,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.18588638, y: 11.794041, z: 50.659733}
+    m_Target: {x: -27.690773, y: -9.267438, z: 3.9928796}
     speed: 2
-    m_Value: {x: 0, y: 1, z: 0}
+    m_Value: {x: -27.690773, y: -9.267438, z: 3.9928796}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -995,13 +995,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.4121327, y: -0.007655414, z: 0.0034631155, w: -0.91108257}
+    m_Target: {x: -0.14225817, y: 0.6293739, z: -0.11863461, w: -0.75469685}
     speed: 2
-    m_Value: {x: -0.41213366, y: -0.0076554315, z: 0.0034631237, w: -0.9110847}
+    m_Value: {x: -0.14225885, y: 0.62937695, z: -0.118635185, w: -0.7547005}
   m_Size:
-    m_Target: 7.344435
+    m_Target: 18.138327
     speed: 2
-    m_Value: 4.6943774
+    m_Value: 18.138327
   m_Ortho:
     m_Target: 0
     speed: 2
