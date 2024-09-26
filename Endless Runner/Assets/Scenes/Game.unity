@@ -128,6 +128,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6993093186350138163, guid: 2ef39421223c604498eac715a3449a37, type: 3}
   m_PrefabInstance: {fileID: 861838984}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &66579020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66579022}
+  - component: {fileID: 66579021}
+  m_Layer: 0
+  m_Name: Speed Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &66579021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66579020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c974effd72d23429fe86505c34cdb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  limitSpeed: 50
+  increaseValue: 5
+--- !u!4 &66579022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66579020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &156295583
 GameObject:
   m_ObjectHideFlags: 3
@@ -1934,3 +1981,4 @@ SceneRoots:
   - {fileID: 742159449}
   - {fileID: 1022083376}
   - {fileID: 1501081820}
+  - {fileID: 66579022}

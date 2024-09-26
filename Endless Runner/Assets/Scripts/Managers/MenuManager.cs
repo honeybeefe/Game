@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Execute()
     {
-        
+        StartCoroutine(SceneryManager.Instance.AsyncLoad(1));
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Shop()
     {
-        
+        Debug.Log("Shop");
+    }
+
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }
