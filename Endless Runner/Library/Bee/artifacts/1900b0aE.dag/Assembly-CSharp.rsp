@@ -362,6 +362,7 @@
 "Assets/Scripts/InteractZone.cs"
 "Assets/Scripts/Managers/AudioManager.cs"
 "Assets/Scripts/Managers/CoinManager.cs"
+"Assets/Scripts/Managers/EventManager.cs"
 "Assets/Scripts/Managers/Input Manager.cs"
 "Assets/Scripts/Managers/InterfaceManager.cs"
 "Assets/Scripts/Managers/MenuManager.cs"
@@ -374,6 +375,7 @@
 "Assets/Scripts/Runner.cs"
 "Assets/Scripts/SelectButton.cs"
 "Assets/Scripts/Singleton.cs"
+"Assets/Scripts/State.cs"
 -langversion:9.0
 /deterministic
 /optimize+
