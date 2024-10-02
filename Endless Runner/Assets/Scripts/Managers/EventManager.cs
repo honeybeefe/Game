@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine;
 
-public enum EventType
+public enum EventType // 이벤트 버스 시스템
 {
     START,
     CONTINUE,
@@ -11,23 +11,45 @@ public enum EventType
     STOP
 }
 
-public class EventManager
+public class EventManager // 이벤트 버스 시스템
 {
     private static readonly IDictionary<EventType, UnityEvent> dictionary = new Dictionary<EventType, UnityEvent>();
 
-    public static void Subscribe(EventType eventType, UnityAction listener)
+    public static void Subscribe(EventType eventType, UnityAction unityAction)
     {
-        UnityEvent unity;
+        UnityEvent unityEvent=null;
 
-        if(dictionary.TryGetValue(eventType, out unity))
+        if(dictionary.TryGetValue(eventType, out unityEvent))
         {
-            unity.AddListener(listener);
+            unityEvent.AddListener(unityAction);
         }
         else
         {
-            unity = new UnityEvent();
-            unity.AddListener(listener);
-            dictionary.Add(eventType, unity);
+            unityEvent = new UnityEvent();
+
+            unityEvent.AddListener(unityAction);
+
+            dictionary.Add(eventType, unityEvent);
+        }
+    }
+
+    public static void UnSubscribe(EventType eventType, UnityAction unityAction) // 이벤트 버스 시스템
+    {
+        UnityEvent unityEvent = null;
+
+        if (dictionary.TryGetValue(eventType, out unityEvent))
+        {
+            unityEvent.RemoveListener(unityAction);
+        }
+    }
+
+    public static void Publish(EventType eventType)
+    {
+        UnityEvent unityEvent = null;
+
+        if (dictionary.TryGetValue(eventType, out unityEvent))
+        {
+            unityEvent.Invoke();
         }
     }
 }
