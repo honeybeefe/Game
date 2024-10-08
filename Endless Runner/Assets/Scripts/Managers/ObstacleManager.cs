@@ -67,11 +67,11 @@ public class ObstacleManager : MonoBehaviour
                 //현재 인덱스에 있는 게임 오브젝트가 활성화되어 있으면 random 변수의 값을 +1해서 다시 검색
                 random = (random + 1) % obstacleList.Count;
             }
-
-            //랜덤으로 설정된 Obstacle 오브젝트를 활성화
-            obstacleList[random].SetActive(true);
-
-
         }
+    }
+
+    public GameObject GetObstacle()
+    {
+        return obstacleList[random];
     }
 }
