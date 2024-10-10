@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstaclePositionManager : MonoBehaviour
+public class ObstaclePositionManager : State
 {
     private Coroutine coroutine;
 
@@ -45,8 +45,6 @@ public class ObstaclePositionManager : MonoBehaviour
     {
         if(coroutine==null)
         {
-            Debug.Log("Coroutine");
-
             coroutine = StartCoroutine(SetPosition());
         }
 

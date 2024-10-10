@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour
+public class Obstacle : MonoBehaviour, IHitable
 {
-    Obstacle obstacle;
-
-    void OnTriggerEnter(Collider other)
+    public void Activate()
     {
-        if()
+        EventManager.Publish(EventType.STOP);
     }
 }

@@ -37,6 +37,8 @@ public class Runner : State
 
     void OnKeyUpdate()
     {
+        if (state == false) return;
+
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if(roadLine!=RoadLine.LEFT)
@@ -77,5 +79,15 @@ public class Runner : State
     {
         base.OnDisable();
         InputManager.Instance.action -= OnKeyUpdate;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        IHitable hitable = other.GetComponent<IHitable>();
+
+        if (hitable != null)
+        {
+            hitable.Activate();
+        }
     }
 }

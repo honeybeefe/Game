@@ -374,6 +374,7 @@
 "Assets/Scripts/Managers/Scenery Manager.cs"
 "Assets/Scripts/Managers/SpeedManager.cs"
 "Assets/Scripts/Obstacle.cs"
+"Assets/Scripts/ObstacleDisableZone.cs"
 "Assets/Scripts/Road.cs"
 "Assets/Scripts/RotationGameObject.cs"
 "Assets/Scripts/Runner.cs"
